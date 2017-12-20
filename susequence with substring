@@ -1,0 +1,18 @@
+from collections import OrderedDict
+def merge_the_tools(string, k):
+    if k==1:
+        for i in range(len(string)):
+            print(string[i])
+    else:
+        original_string=[]
+        length_n=len(string)
+        t=str()    
+        len2bsplit=int(k)
+        for i in range(0,length_n,len2bsplit):
+            t=str(string[i:len2bsplit])
+            print ("".join(OrderedDict.fromkeys(t)))
+            i=len2bsplit+1
+            len2bsplit += len2bsplit
+            #rint(finalstring)
+ #link
+ #https://www.hackerrank.com/challenges/merge-the-tools/problem
