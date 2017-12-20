@@ -1,0 +1,10 @@
+if __name__ == '__main__':
+    s = input()
+    print(any(s1.isalnum() for s1 in s))
+    print(any(s1.isalpha() for s1 in s))
+    print(any(s1.isdigit() for s1 in s))
+    print(any(s1.islower() for s1 in s))
+    print(any(s1.isupper() for s1 in s))
+
+#link
+#https://www.hackerrank.com/challenges/string-validators/problem
