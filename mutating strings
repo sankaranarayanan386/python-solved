@@ -1,0 +1,9 @@
+def mutate_string(string, position, character):
+    string_list=list(string)    
+    string_list[position]=str(character)
+    string_list=''.join(string_list)
+    return (string_list)
+
+
+#link
+#https://www.hackerrank.com/challenges/python-mutations/problem
