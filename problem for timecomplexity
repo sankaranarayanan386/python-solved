@@ -1,0 +1,31 @@
+#solution with time complexity of n which runs faster and based on mathematics derivation which is in discussion
+
+k,arr = int(input()),list(map(int, input().split()))
+myset = set(arr)
+print(((sum(myset)*k)-(sum(arr)))//(k-1))
+
+
+
+
+#solution with n(squared) time complexity which fails to run and shows time out
+k=int(input())
+room_list=list(map(int,input().split()))
+#count=list('0' * len(room_list))
+a=[i for i in room_list if room_list.count(i)==1]
+print(a[0])
+
+#same of above in different format but same meaning
+k=int(input())
+room_list=list(map(int,input().split()))
+#count=list('0' * len(room_list))
+for i in (room_list):
+    
+    if(room_list.count(i)==1):
+        print(i)
+
+     
+
+
+
+#link
+#https://www.hackerrank.com/challenges/py-the-captains-room/problem
