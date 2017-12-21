@@ -1,0 +1,15 @@
+n=int(input())
+nset=set(list(map(int,input().split())))
+m=int(input())
+mset=set(list(map(int,input().split())))
+print(len((nset-mset)))
+
+#_,a,_,b=[set(input().split()) for _ in '1234'];print(len(a-b))
+
+
+
+
+
+
+#link
+#https://www.hackerrank.com/challenges/py-set-difference-operation/problem
