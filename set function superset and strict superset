@@ -1,0 +1,35 @@
+#strict super set
+set_a=set(map(int,input().split()))
+count=0
+for i in range(int(input())):
+    sub_set=set(map(int,input().split()))
+    if(not(set_a>sub_set)):
+        count=1
+        break
+if count==0:    
+    print("True")
+else:
+    print("False")
+    
+    
+    
+    
+#superset
+
+set_a=set(map(int,input().split()))
+count=0
+for i in range(int(input())):
+    sub_set=set(map(int,input().split()))
+    if(not (set_a.issuperset(sub_set)) & (len(sub_set)>=len(set_a))):
+        count=1
+        break
+if count==0:
+    
+    print("True")
+else:
+    print("False")
+
+
+
+#link
+#https://www.hackerrank.com/challenges/py-check-strict-superset/problem
