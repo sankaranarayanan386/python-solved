@@ -1,0 +1,9 @@
+n=int(input())
+nset=set(list(map(int,input().split())))
+m=int(input())
+mset=set(list(map(int,input().split())))
+print(len(nset.symmetric_difference(mset)))
+
+
+#link
+#https://www.hackerrank.com/challenges/py-set-symmetric-difference-operation/problem
