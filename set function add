@@ -1,0 +1,9 @@
+n=int(input())
+stamp_set=[]
+for _ in range(n):
+    stamp_set.append(input())
+stamp_set=set(stamp_set)
+print(len(stamp_set))
+
+#link
+#https://www.hackerrank.com/challenges/py-set-add/problem
