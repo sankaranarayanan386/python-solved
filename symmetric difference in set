@@ -1,0 +1,20 @@
+m=int(input())
+m_numbers=list((input().strip().split()))
+n=int(input())
+n_numbers=list((input().strip().split()))
+mset=set(map(int,m_numbers))
+nset=set(map(int,n_numbers))
+symmetric_diff=list(map(int,mset.difference(nset)))
+symmetric_diff1=list(map(int,nset.difference(mset)))
+total_diff=list(symmetric_diff+symmetric_diff1)
+total_diff=sorted(total_diff)
+length=len(total_diff)
+for i in range(0,length):
+    {
+        print(total_diff[i])
+    }
+#print(total_diff)
+
+
+#link
+#https://www.hackerrank.com/challenges/symmetric-difference/problem
