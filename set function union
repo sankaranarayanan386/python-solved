@@ -1,0 +1,13 @@
+n_eng_subscribers=int(input())
+eng_subscribers=set(map(int,input().split()))
+n_french_subscribers=int(input())
+french_subscribers=set(map(int,input().split()))
+union_of_eng_and_french=eng_subscribers.union(french_subscribers)
+#print(n_eng_subscribers)
+#print(n_french_subscribers)
+print((len(union_of_eng_and_french)))
+
+
+
+#link
+#https://www.hackerrank.com/challenges/py-set-union/problem
