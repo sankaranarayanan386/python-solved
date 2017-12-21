@@ -1,0 +1,10 @@
+n_eng=int(input())
+eng_subscribers=set(map(int,input().split()))
+n_french=int(input())
+french_subscribers=set(map(int,input().split()))
+print(len(eng_subscribers&french_subscribers))
+
+
+
+#link
+#https://www.hackerrank.com/challenges/py-set-intersection-operation/problem
