@@ -1,0 +1,12 @@
+
+import math
+AB = float(input())
+BC = float(input())
+
+#print(str(int(round(math.degrees(math.atan2(AB, BC)))))+'°') #alternate method1
+print(str(round(math.degrees(math.atan((AB / 2) / (BC / 2))))) + "°")#alternate method 2
+#import math AB = int(raw_input()) BC = int(raw_input()) print str(int(round(math.degrees(math.atan2(AB,BC)))))+'°' #alternate method3
+
+
+#LINK
+#https://www.hackerrank.com/challenges/find-angle/problem
