@@ -1,0 +1,17 @@
+import cmath
+import math
+complex_number=complex(input())
+a=cmath.atan(complex_number.imag/complex_number.real).real
+print(abs((cmath.sqrt(abs(complex_number.real**2)+abs(complex_number.imag**2)))))
+if(a>=0):
+    print(a)
+else:
+    print((2*math.pi)-a)
+
+
+
+
+
+
+#link
+#https://www.hackerrank.com/challenges/polar-coordinates/problem
