@@ -1,0 +1,22 @@
+#calculator bassic
+#import cmath
+import math
+arithmetic1={"+","-","*","/","//","**","%"}
+trignometric1={"sin","cos","tan","degrees","radians","asin","acos","atan"}
+trignometric2={"hypot"}
+operator1=input("enter operator symbol")
+if (operator1 in arithmetic1) or (operator1 in trignometric2):
+    number1=input("enter first operand")
+    number2=input("enter second operand")
+    try:
+        print(eval(number1+"cmath."+operator1+number2))
+        raise SyntaxError
+    except SyntaxError:
+        print(eval("math."+operator1+"("+number1+","+number2+")"))
+elif operator1 in trignometric1:
+   number1=input("enter input as radians")
+   try:
+       print(eval(number1+"math."+operator1+number2)) 
+       raise SyntaxError
+   except SyntaxError:
+       print(eval("math."+operator1+"("+number1+")"))
