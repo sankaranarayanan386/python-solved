@@ -1,0 +1,24 @@
+import numpy as np # learn more: https://python.org/pypi/numpy
+a = np.array([[1,2,3,4], [5,6,7,8], [9,10,11,12]])
+b=a[0:2,0:3]
+print(a,b,sep="\n")
+print(b[0,0])
+b[0,0]=799
+al=[0,1,2,3,4,5,6,7,8,9]
+bl=al[0:5]
+for i in range(0,5):
+  print("bl    ",hex(id(bl[i])))
+for i in range(0,9):
+  print("al    ",hex(id(al[i])))
+print("\n\n\n\n\n")
+
+i=0
+j=0
+for i in range(2):
+  for j in range(3):
+    print(hex(id(b[i,j])),sep="\n")
+print("a matrix")
+for i in range(3):
+  for j in range(4):
+    print(hex(id(a[i,j])),sep="\n")
+ 
