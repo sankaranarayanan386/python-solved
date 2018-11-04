@@ -1,0 +1,50 @@
+Introduction to Python 3
+	List Of Data Types in Python3 
+		Python has five standard data types
+			Numbers
+			String
+			List
+			Tuple
+			Dictionary
+		Numbers:
+			int (signed integers) ex. +34,-43,53...
+			float (floating point real values) ex. 1.043,2.3442342 ....
+			complex (complex numbers) ex. 3e+26J,4.53e-7j,-.6545+0J,45.j ...(follows x+yj format)
+		Strings:
+			ex. "asdasdasdASD".'d',etc..
+		List
+			can be created just by enclosing the variables inside an square brackets.
+			a list can contains objects of different data types unlike arrays.
+			Lists are mutable in both size and elemnts.
+			ex.   list = [ 'abcd', 786 , 2.23, 'john', 70.2 ]
+						tinylist = [123, 'john']
+				print(list) #prints the whole list
+				one can slkice the list using the slice operator [:] and + for concatenation and * for repettition of the elemnts selsected
+				ex. list+tinylist gives merged version of both the list and list * 2 gives the list twice.
+		
+		Tuples
+			can be created by enclosing the variables/elements inside a ()
+			tuple also sim,iliar to list can contain differebnt values of diffetent data types
+			tuple is ummutable means like a read only list.
+			ex. tup=(12,'asd',1231,1212)
+			REST ALL THE OPERATIONS HAVE THE SIMILIAR EFFECT AS OF LISTS.
+		Dictionary
+			Python's dictionaries are kind of hash-table type. They work like associative arrays or hashes found in Perl and consist of key-value pairs. A dictionary key can be almost any Python type, but are usually numbers or strings. Values, on the other hand, can be any arbitrary Python object.
+			Dictionaries are enclosed by curly braces ({ }) and values can be assigned and accessed using square braces ([]). 
+			Dictionaries have no concept of order among the elements. It is incorrect to say that the elements are "out of order"; they are simply unordered.			
+				EXAMPLE CODES SNIPPET FROM TUTORIALS POINT
+					dict = {}
+					dict['one'] = "This is one"
+					dict[2]     = "This is two"
+					tinydict = {'name': 'john','code':6734, 'dept': 'sales'}
+					print (dict['one'])       # Prints value for 'one' key
+					print (dict[2])           # Prints value for 2 key
+					print (tinydict)          # Prints complete dictionary
+					print (tinydict.keys())   # Prints all the keys
+					print (tinydict.values()) # Prints all the values
+					OUTPUT
+					This is one
+					This is two
+					{'name': 'john', 'dept': 'sales', 'code': 6734}
+					dict_keys(['name', 'dept', 'code'])
+					dict_values(['john', 'sales', 6734])
